@@ -1,4 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+	images: {
+		// domains: ["images.pexels.com"],
 
-module.exports = nextConfig
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: "**",
+			},
+		],
+	},
+	swcMinify: true,
+};
+
+module.exports = nextConfig;

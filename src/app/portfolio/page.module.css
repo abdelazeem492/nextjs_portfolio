@@ -1,0 +1,65 @@
+.mainTitle {
+	font-size: 100px;
+	text-transform: capitalize;
+	margin-bottom: 50px;
+}
+
+@media (max-width: 578px) {
+	.mainTitle {
+		font-size: 68px;
+	}
+}
+
+.title {
+	margin: 20px 0;
+}
+
+.items {
+	display: flex;
+	gap: 50px;
+	flex-wrap: wrap;
+}
+
+.item {
+	border: 4px solid #777;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background-size: cover;
+}
+
+.item:nth-child(1) {
+	background-image: url("/illustration.png");
+}
+
+.item:nth-child(2) {
+	background-image: url("/websites.jpg");
+}
+
+.item:nth-child(3) {
+	background-image: url("/apps.jpg");
+}
+
+.itemTitle {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 40px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	text-transform: capitalize;
+	color: #bbb;
+}
+
+.item:hover .itemTitle {
+	color: #4bc286;
+}

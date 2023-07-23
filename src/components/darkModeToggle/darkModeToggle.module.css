@@ -1,0 +1,42 @@
+.container {
+	width: 42px;
+	height: 24px;
+	border: 2px solid #53c28b70;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2px;
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-inline: auto;
+}
+
+.icon {
+	font-size: 12px;
+}
+
+.ball {
+	width: 15px;
+	height: 15px;
+	background-color: #53c28b;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	position: absolute;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}

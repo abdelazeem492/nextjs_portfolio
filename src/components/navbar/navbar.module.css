@@ -1,0 +1,116 @@
+.container {
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.links {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.link {
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.link:hover {
+	color: #64bb90;
+	border-color: #64bb90;
+}
+
+.logout {
+	padding: 8px;
+	border: none;
+	background-color: #53bb87;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.logout:hover {
+	background-color: #34bb78;
+}
+
+.toggle {
+	cursor: pointer;
+	display: none;
+	position: relative;
+	z-index: 999;
+}
+
+@media (max-width: 960px) {
+	.links {
+		gap: 10px;
+	}
+}
+
+@media (max-width: 735px) {
+	.links {
+		position: absolute;
+		height: 100vh;
+		width: 50vw;
+		min-width: 260px;
+		right: -100%;
+		z-index: 9;
+		top: 0;
+		background: rgba(122, 122, 122, 0.225);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.34);
+		backdrop-filter: blur(9px);
+		-webkit-backdrop-filter: blur(9px);
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+		padding-top: 80px;
+		align-items: flex-start;
+		transition: all 0.3s linear;
+		-webkit-transition: all 0.3s linear;
+		-moz-transition: all 0.3s linear;
+		-ms-transition: all 0.3s linear;
+		-o-transition: all 0.3s linear;
+	}
+	.link {
+		padding: 20px 20px;
+		border-bottom: 1px solid #878787;
+		width: 100%;
+		font-size: 18px;
+	}
+	.link:last-of-type {
+		border: none;
+		margin-bottom: 20px;
+	}
+	.link:first-of-type {
+		margin-top: 20px;
+	}
+	.link:hover {
+		padding-left: 27px;
+	}
+	.logout {
+		width: 80%;
+		margin-inline: auto;
+		font-size: 16px;
+	}
+	.toggle {
+		display: block;
+		cursor: pointer;
+	}
+}

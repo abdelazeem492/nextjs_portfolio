@@ -1,0 +1,120 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.title {
+	font-size: 60px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	gap: 100px;
+}
+
+.imgContainer {
+	flex: 1;
+	height: 430px;
+	position: relative;
+	margin: auto;
+}
+
+.image {
+	-o-object-fit: contain;
+	object-fit: contain;
+	animation: imgAnim 5s linear 0s infinite normal forwards;
+	-webkit-animation: imgAnim 5s linear 0s infinite normal forwards;
+}
+
+@-webkit-keyframes imgAnim {
+	0% {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.03) translateY(-15px);
+		-webkit-transform: scale(1.03) translateY(-15px);
+		-moz-transform: scale(1.03) translateY(-15px);
+		-ms-transform: scale(1.03) translateY(-15px);
+		-o-transform: scale(1.03) translateY(-15px);
+	}
+
+	100% {
+		transform: scale(1) translateY(0);
+		-webkit-transform: scale(1) translateY(0);
+		-moz-transform: scale(1) translateY(0);
+		-ms-transform: scale(1) translateY(0);
+		-o-transform: scale(1) translateY(0);
+	}
+}
+
+@keyframes imgAnim {
+	0% {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.03) translateY(-15px);
+		-webkit-transform: scale(1.03) translateY(-15px);
+		-moz-transform: scale(1.03) translateY(-15px);
+		-ms-transform: scale(1.03) translateY(-15px);
+		-o-transform: scale(1.03) translateY(-15px);
+	}
+
+	100% {
+		transform: scale(1) translateY(0);
+		-webkit-transform: scale(1) translateY(0);
+		-moz-transform: scale(1) translateY(0);
+		-ms-transform: scale(1) translateY(0);
+		-o-transform: scale(1) translateY(0);
+	}
+}
+
+.form {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.input,
+.textarea {
+	padding: 20px;
+	background-color: transparent;
+	outline: none;
+	border: 1px solid #777;
+	border-radius: 3px;
+	color: #bbb;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+@media (max-width: 768px) {
+	.imgContainer,
+	.img {
+		display: none;
+	}
+	.form {
+		max-width: 400px;
+		margin-inline: auto;
+	}
+	.title {
+		font-size: 40px;
+	}
+}
