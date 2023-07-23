@@ -8,7 +8,7 @@ const Button = ({ content, path, icon }) => {
 		<Link href={path}>
 			<button className={styles.btn}>
 				{content}
-				{icon && <i className={icon} style={{ marginLeft: "3px" }} />}
+				{icon && <i className={icon} style={{ marginLeft: 3 + "px" }} />}
 			</button>
 		</Link>
 	);

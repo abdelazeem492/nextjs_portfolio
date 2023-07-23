@@ -66,7 +66,7 @@ const Navbar = () => {
 			</div>
 			<nav
 				className={styles.links}
-				style={open ? { right: 0 } : { right: "-100%" }}
+				style={open ? { right: 0 } : { right: -100 + "%" }}
 			>
 				<DarkModeToggle />
 				{links.map((link) => (

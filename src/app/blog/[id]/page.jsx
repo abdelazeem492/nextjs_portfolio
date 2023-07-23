@@ -3,9 +3,12 @@ import styles from "./page.module.css";
 import { notFound } from "next/navigation";
 
 async function getData(id) {
-	const res = await fetch(`${process.env.LOCATION_ORIGIN}/api/posts/${id}`, {
-		cache: "no-store",
-	});
+	const res = await fetch(
+		`${process.env.LOCATION_ORIGIN || "http://localhost:3000"}/api/posts/${id}`,
+		{
+			cache: "no-store",
+		},
+	);
 
 	if (!res.ok) {
 		return notFound();

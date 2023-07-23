@@ -71,7 +71,7 @@ const Register = () => {
 				/>
 				<button className={styles.btn}>
 					Register
-					<i className='bi bi-person-add' style={{ fontSize: "20px" }}></i>
+					<i className='bi bi-person-add' style={{ fontSize: 20 + "px" }}></i>
 				</button>
 			</form>
 			<h5 style={{ margin: 0 }}>- OR -</h5>

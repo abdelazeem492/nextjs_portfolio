@@ -54,7 +54,7 @@ const Login = () => {
 					Login
 					<i
 						className='bi bi-box-arrow-in-right'
-						style={{ fontSize: "20px", margin: "0 3px" }}
+						style={{ fontSize: 20 + "px", marginInline: 3 + "px" }}
 					></i>
 				</button>
 			</form>
